@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Liste des chambres disponibles</title>
+  <link rel="stylesheet" href="../style/recherches.css" />
+  <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+  <header>
+    <a href="../index.html"><div class="logo">ehotel</div></a>
+    <div class="currency">DZ</div>
+    <div>
+      <a href="../login.html">
+          <button class="login-button">Log In</button>
+        </a>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1 id="hotel-name">Chambres Disponibles</h1>
+
+    <!-- 🔽 Filtres -->
+    <div class="filters">
+      <label for="prixMax">Prix max :</label>
+      <input type="number" id="prixMax" placeholder="Ex: 10000 DA" />
+      <button onclick="appliquerFiltre()">Filtrer</button>
+    </div>
+
+    <div class="room-list" id="roomList">
+      <!-- Les chambres seront insérées dynamiquement ici -->
+    </div>
+
+    <div class="back-button">
+      <button onclick="retour()">← Retour à la liste des hôtels</button>
+    </div>
+  </div>
+
+  <script src="../js/rechchambres.js"></script>
+</body>
+</html>

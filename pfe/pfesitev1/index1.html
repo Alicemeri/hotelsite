@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hôtel [Nom de l'Hôtel]</title>
+    <!-- Lien vers Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Lien vers le fichier CSS séparé -->
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Section Hero -->
+    <div class="hero-section">
+        <div class="container">
+            <h1>Bienvenue à l'Hôtel [Nom de l'Hôtel]</h1>
+            <p>Réservez votre séjour dès maintenant dans notre hôtel confortable et accueillant.</p>
+        </div>
+    </div>
+
+    <!-- Section Information Hôtel -->
+    <div class="container mt-5 info-section">
+        <h2>À propos de l'Hôtel</h2>
+        <p>Notre hôtel vous propose une expérience unique avec des chambres modernes, un service de qualité et une vue imprenable. Nous vous offrons tout ce dont vous avez besoin pour un séjour agréable.</p>
+        
+        <h3>Services disponibles :</h3>
+        <ul>
+            <li>Chambres confortables et spacieuses</li>
+            <li>Wi-Fi gratuit</li>
+            <li>Petit-déjeuner inclus</li>
+            <li>Restaurant et bar sur place</li>
+            <li>Spa et salle de fitness</li>
+        </ul>
+
+        <h3>Réservez votre séjour</h3>
+        <p>Nos chambres sont disponibles à partir de [prix] par nuit. Utilisez le formulaire ci-dessous pour réserver directement en ligne.</p>
+
+        <!-- Formulaire de réservation -->
+        <form action="reservation.html" method="get">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="checkin">Date d'arrivée</label>
+                    <input type="date" class="form-control" id="checkin" name="checkin" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="checkout">Date de départ</label>
+                    <input type="date" class="form-control" id="checkout" name="checkout" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Réserver maintenant</button>
+        </form>
+    </div>
+
+    <!-- Section Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Hôtel [Nom de l'Hôtel]. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Lien vers Bootstrap JS et jQuery -->
+     <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

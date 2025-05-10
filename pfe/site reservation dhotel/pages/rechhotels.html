@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recherche d'Hôtels</title>
+  <link rel="stylesheet" href="../style/rechhotel.css">
+  <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+  <header>
+    <a href="../index.html"><div class="logo">ehotel</div></a>
+    
+    <div class="currency">DZ</div>
+    <div>
+      <a href="../login.html">
+          <button class="login-button">Log In</button>
+        </a>
+  </div>
+  
+    
+    
+
+</header>
+  <div class="container">
+    <h1>Résultats de recherche - Hôtels</h1>
+    <div class="filters">
+      <div class="filter-item">
+        <label for="prixMax">Prix max:</label>
+        <input type="number" id="prixMax" placeholder="Ex: 10000">
+      </div>
+    
+      <div class="filter-item">
+        <label for="etoiles">Étoiles:</label>
+        <select id="etoiles">
+          <option value="">Toutes</option>
+          <option value="3">3 étoiles</option>
+          <option value="4">4 étoiles</option>
+          <option value="5">5 étoiles</option>
+        </select>
+      </div>
+    
+      <div class="filter-item">
+        <button class="main-button" id="filtrerBtn">Filtrer</button>
+      </div>
+    </div>
+    
+
+    <a href="rechchambres.html"><button class="main-button">toutes les chambres </button></a>
+    <!-- Liste d’hôtels -->
+    <div class="hotel-list" id="hotelList">
+      
+      
+      <!-- Hôtels insérés dynamiquement -->
+    </div>
+  </div>
+
+  <script src="../js/rechhotel.js"></script>
+</body>
+</html>

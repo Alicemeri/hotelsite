@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ebooking.com - Hôtels au meilleur prix</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ehotel</div>
+        <div class="currency">DZ</div>
+        <div>
+            <a href="../login.html">
+                <button class="login-button">Log In</button>
+              </a>
+        </div>
+        
+        
+    </header>
+    <div class="header">
+        <h1>Hôtels au meilleur prix</h1>
+        <p>votre destination a souhait</p>
+    </div>
+    <div class="container">
+        
+        
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Où allez-vous ?">
+            
+            <input type="text" id="date_arrivee" placeholder="Date d'arrivée">
+            <input type="text" id="date_depart" placeholder="Date de départ">
+
+            <!-- Ajoute dans le <head> -->
+            
+
+            <!-- Avant la fin de ton body -->
+            
+
+            <input type="text" class="nbrpersonne" placeholder="combien etes-vous">
+
+          
+                <button id="search-button" class="search-button">Rechercher</button>
+            
+            
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>Réservez en securite</h3>
+                <p>Aucun frais d'annulation de ebooking.com</p>
+            </div>
+            <div class="feature">
+                <h3>Trouvez votre endroit au meilleur prix</h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+            <script>
+            flatpickr("#date_arrivee", { minDate: "today" });
+            flatpickr("#date_depart", { minDate: "today" });
+            </script>
+</body>
+</html>

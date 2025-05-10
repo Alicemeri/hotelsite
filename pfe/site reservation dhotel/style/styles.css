@@ -1,0 +1,156 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #eef2f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 20px; /* Ajusté pour laisser plus d'espace en haut */
+  position: relative; /* Pour positionner le bouton à droite */
+}
+
+.currency {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 14px;
+  background-color: #0077cc;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+.login-button {
+  background-color: #4CAF50; /* Vert */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  position: absolute;
+  top: 20px;
+  right: 120px; /* Décalage du bouton par rapport à "DZ" */
+}
+
+.login-button:hover {
+  background-color: #45a049;
+}
+
+header a {
+  text-decoration: none; /* enlève le soulignement */
+}
+.header {
+  text-align: center;
+}
+
+/* Pour la partie container (s'il y en a un) */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.search-box {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  gap: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.search-input,
+.nbrpersonne,
+.search-button {
+  flex: 1 1 200px;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.search-details {
+  display: flex;
+  gap: 10px;
+  flex: 1 1 100%;
+}
+
+.search-details input[type="date"] {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-details input[type="date"]:hover {
+  background-color: #d9eaff;
+}
+
+.search-button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #005fa3;
+}
+
+.resultat-message {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #0077cc;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.feature {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.feature h3 {
+  font-size: 20px;
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  color: #666;
+  font-size: 15px;
+}

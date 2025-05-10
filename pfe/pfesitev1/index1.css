@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.hero-section {
+    
+    background-size:auto;
+    background-position: center;
+    height: 500px;
+    background-color: bisque;
+    color: brown;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.info-section {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

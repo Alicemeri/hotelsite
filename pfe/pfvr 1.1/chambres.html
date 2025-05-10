@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nos Chambres - [Nom de l'Hôtel]</title>
+    <!-- Lien vers Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Lien vers le fichier CSS séparé -->
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">[Nom de l'Hôtel]</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chambres.html">Chambres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="a_propos.html">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="partenaires.html">Partenaires</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section de recherche des chambres -->
+    <div class="container mt-5">
+        <h2>Nos Chambres</h2>
+        <p>Recherchez et découvrez nos chambres disponibles :</p>
+
+        <!-- Formulaire de recherche -->
+        <form action="chambres.html" method="GET" id="searchForm">
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Rechercher par nom de chambre" name="search_name">
+                </div>
+                <div class="col-md-4">
+                    <select class="form-control" name="search_type">
+                        <option value="">Sélectionner un type</option>
+                        <option value="standard">Standard</option>
+                        <option value="suite">Suite</option>
+                        <option value="deluxe">Deluxe</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <input type="number" class="form-control" placeholder="Prix max" name="max_price">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Rechercher</button>
+        </form>
+
+        <!-- Affichage des chambres disponibles -->
+        <div class="row mt-5" id="chambresList">
+            <!-- Chambres dynamiques à ajouter via PHP -->
+            <!-- Exemple de chambre -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/chambre1.jpg" class="card-img-top" alt="Chambre 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Chambre Standard</h5>
+                        <p class="card-text">Confort et modernité. À partir de 100€/nuit.</p>
+                        <a href="detail_chambre.html" class="btn btn-primary">Voir les détails</a>
+                        <a href="detail_chambre.php?id=<?php echo $chambre['id']; ?>">Voir les détails</a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Ajouter ici plus de chambres dynamiquement avec PHP -->
+        </div>
+    </div>
+
+    <!-- Section Footer -->
+    <footer class="footer text-center py-3">
+        <p>&copy; 2025 Hôtel [Nom de l'Hôtel]. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Lien vers Bootstrap JS et jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
